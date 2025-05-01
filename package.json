@@ -1,0 +1,43 @@
+{
+  "name": "questions-de-cours",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Rémi Angot"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "lint": "biome check --write ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/vite": "^4.1.5",
+    "@tsconfig/svelte": "^5.0.4",
+    "@types/node": "^22.15.3",
+    "daisyui": "^5.0.35",
+    "svelte": "^5.28.2",
+    "svelte-check": "^4.1.6",
+    "svelte-render-scan": "^1.1.0",
+    "tailwindcss": "^4.1.5",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "dependencies": {
+    "@lucide/svelte": "^0.503.0",
+    "@myriaddreamin/typst-ts-renderer": "0.6.0",
+    "@myriaddreamin/typst-ts-web-compiler": "0.6.0",
+    "@myriaddreamin/typst.ts": "0.6.0"
+  }
+}
